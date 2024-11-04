@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <div className="mt-32" id="home">
+    <div className="mt-32" id="#">
       <div className="text-center">
         <h1 className="lg:text-7xl md:text-5xl text-4xl">
           <span className="text-black">Infinities </span>
@@ -15,7 +15,7 @@ const HomePage = () => {
           At Infinities Solutions, we push the boundaries of technology to elevate your business. With custom software and advanced data analytics, our experts provide tools tailored to your unique needs.
         </p>
 
-        <div className="flex justify-center space-x-6 mt-8">
+        <div className="flex justify-center space-x-6 mt-8 mb-20">
           {/* First button with white background and red hover */}
           <Link href="#services">
             <span className="px-6 py-3 bg-white text-red-600 border border-red-600 rounded-md font-semibold hover:bg-red-600 hover:text-white transition duration-300">
