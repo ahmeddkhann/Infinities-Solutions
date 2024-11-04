@@ -25,10 +25,7 @@ const Navbar = () => {
           height={80}
           alt="logo" 
         />
-        <p className="ml-2 text-xl font-semibold">
-          <span className="text-black">Infinities</span> 
-          <span className="text-red-600">Solutions</span>
-        </p>
+      
       </div>
       
       <div className="flex space-x-6">
