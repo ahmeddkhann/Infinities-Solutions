@@ -70,9 +70,76 @@ export const team = [
     },
     {
         id: 3,
-        name: "Mohsin Kamal",
+        name: "Mohsin Kamal Qureshi",
         position: ["Co-Founder &", "Data Analyst"],
         image: "/mohsin.png",
         LinkedIn: "https://www.linkedin.com/in/mohsin-kamal-qureshi-085170309/"
     }
 ]
+
+export const projects = [
+    {
+        id: 1,
+        title: "LearnXplorers Academy",
+        description: "LearnXplorers Academy is an online platform where you can learn about different subjects for your exams. It is user-friendly and easy to use.",
+        image: "/learnxplorers.png",
+        link: "https://learn-xplorers-academy.vercel.app/"
+    },
+    {
+        id: 2,
+        title: "EverCare Medical Centre",
+        description: "EverCare Medical Centre is a web application that allows patients to book appointments, view their medical history, and communicate with their healthcare providers.",
+        image: "/hospital-management.png",
+        link: ""
+    },
+    {
+        id: 3,
+        title: "Sales & Customer Dashboard",
+        description: "An interactive dashboard designed to visualize sales performance, customer behavior, and key business metrics to help drive informed decision-making.",
+        image: "/sales-customer-dashboard.png",
+        link: "https://lnkd.in/eR7HB4RG"
+    },
+    {
+        id: 4,
+        title: "Human Resources Dashboard",
+        description: "A comprehensive dashboard for managing employee data, tracking performance metrics, and streamlining HR processes to enhance organizational efficiency.",
+        image: "/hr-dashboard.png",
+        link: "https://lnkd.in/eiDWzCae"
+    },
+   
+];
+
+export const webProjects = [
+    {
+        id: 1,
+        title: "LearnXplorers Academy",
+        description: "LearnXplorers Academy is an online platform where you can learn about different subjects for your exams. It is user-friendly and easy to use.",
+        image: "/learnxplorers.png",
+        link: "https://learn-xplorers-academy.vercel.app/"
+    },
+    {
+        id: 2,
+        title: "EverCare Medical Centre",
+        description: "EverCare Medical Centre is a web application that allows patients to book appointments, view their medical history, and communicate with their healthcare providers.",
+        image: "/hospital-management.png",
+        link: ""
+    },
+]
+
+export const visualizationProject = [
+    {
+        id: 1,
+        title: "Sales & Customer Dashboard",
+        description: "An interactive dashboard designed to visualize sales performance, customer behavior, and key business metrics to help drive informed decision-making.",
+        image: "/sales-customer-dashboard.png",
+        link: "https://lnkd.in/eR7HB4RG"
+    },
+    {
+        id: 2,
+        title: "Human Resources Dashboard",
+        description: "A comprehensive dashboard for managing employee data, tracking performance metrics, and streamlining HR processes to enhance organizational efficiency.",
+        image: "/hr-dashboard.png",
+        link: "https://lnkd.in/eiDWzCae"
+    },
+]
+

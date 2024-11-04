@@ -10,7 +10,7 @@ const Services = () => {
         Our Services
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {services.map((service) => (
           <div
             key={service.id}
@@ -24,7 +24,7 @@ const Services = () => {
               className="mb-4"
             />
             <h1 className="text-lg font-semibold mb-2">{service.title}</h1>
-            <p className="text-center text-neutral-700">{service.text}</p>
+            <p className="text-center text-neutral-700 w-[70%]">{service.text}</p>
 
             {/* View More Button */}
             <Link href={`${service.link}`} className="mt-6">
