@@ -14,7 +14,8 @@ const Services = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-white lg:opacity-80 lg:hover:opacity-100 lg:hover:scale-105 rounded-lg transition duration-300 shadow-lg p-4 flex flex-col items-center"
+            className="bg-neutral-100 lg:opacity-80 lg:hover:opacity-100 hover:bg-red-500 hover:text-neutral-100 
+             lg:hover:scale-105 rounded-lg transition duration-300 shadow-lg p-4 flex flex-col items-center"
           >
             <Image
               src={service.image}
@@ -24,7 +25,7 @@ const Services = () => {
               className="mb-4"
             />
             <h1 className="text-lg font-semibold mb-2">{service.title}</h1>
-            <p className="text-center text-neutral-700 w-[70%]">{service.text}</p>
+            <p className="text-center w-[70%]">{service.text}</p>
 
             {/* View More Button */}
             <Link href={`${service.link}`} className="mt-6">
