@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import linkedIn from "/public/linkedin.png";
+import emailIcon from "public//email.png"
 
 const Team = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,8 +30,8 @@ const Team = () => {
         <AnimatePresence>
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, x: 100, y: 0 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0, x: 100, y: -1 }}
+            animate={{ opacity: 1, x: 0, y: -1 }}
             exit={{ opacity: 0, x: -100, y: 0 }}
             transition={{ duration: 0.5 }}
             className={`flex min-w-full cursor-pointer 

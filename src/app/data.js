@@ -143,3 +143,26 @@ export const visualizationProject = [
     },
 ]
 
+export const Socialcontact = [
+    {
+        id: "1",
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/ahmed-khan-5b014a301/",
+        icon: "/linkedin1.png",
+    },
+    {
+        id: "2",
+        name: "Instagram",
+        link: "https://www.instagram.com/infinities_solutions?igsh=MnRvb3p5MHhjamMw",
+        icon: "/instagram.png",
+    },
+    {
+        id: "3",
+        name: "Email",
+        link: "",
+        icon: "/email.png",
+        email: "infinitiessolutions@gmail.com"
+    },
+    
+]
+
