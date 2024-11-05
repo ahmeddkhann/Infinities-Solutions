@@ -24,8 +24,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full shadow-md flex items-center justify-between px-2 transition-all duration-300 ${
-        scrolled ? 'bg-white' : 'bg-transparent'
-      }`}
+        scrolled ? 'bg-white' : 'bg-white'
+      }  z-50`}
     >
       <div className="flex items-center">
         <Image src={navImage.image} width={120} height={80} alt="logo" />

@@ -3,9 +3,9 @@ import { aboutText } from './data';
 
 const About = () => {
   return (
-    <div id="about" className="flex justify-center items-center mt-16 px-4 bg-neutral-900 py-12">
+    <div id="about" className="flex justify-center items-center mt-16 px-4 bg-red-500 py-12">
       <div className="max-w-4xl">
-        <h1 className="text-4xl text-red-500 font-bold mb-6 text-center">
+        <h1 className="text-4xl text-neutral-100 font-bold mb-6 text-center">
           {aboutText.title}
         </h1>
         
