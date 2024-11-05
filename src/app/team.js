@@ -1,38 +1,61 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { team } from './data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import linkedIn from "/public/linkedin.png";
-import emailIcon from "public//email.png"
 
 const Team = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const sliderRef = useRef(null);
 
+  // Function to handle the next slide
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % team.length);
   };
 
-  // Auto-slide every 3 seconds
+  // Intersection Observer to track slider visibility
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
-    return () => clearInterval(interval);
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.5 } // Trigger when 50% of the element is visible
+    );
+
+    if (sliderRef.current) {
+      observer.observe(sliderRef.current);
+    }
+
+    return () => {
+      if (sliderRef.current) observer.unobserve(sliderRef.current);
+    };
   }, []);
+
+  // Start/stop auto-slide based on visibility
+  useEffect(() => {
+    let interval;
+    if (isVisible) {
+      interval = setInterval(nextSlide, 3000);
+    } else if (interval) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isVisible]);
 
   return (
     <div id="team" className="py-10 px-4">
       <h1 className="text-3xl font-bold text-center mb-8">Our Team</h1>
 
       {/* Slider for Small Screens */}
-      <div className="relative block lg:hidden w-full overflow-hidden">
+      <div ref={sliderRef} className="relative block lg:hidden w-full overflow-hidden">
         <AnimatePresence>
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, x: 100, y: -1 }}
-            animate={{ opacity: 1, x: 0, y: -1 }}
-            exit={{ opacity: 0, x: -100, y: 0 }}
+            initial={{ opacity: 0, x: 100 }} // Only sliding in x-axis
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
             className={`flex min-w-full cursor-pointer 
               ${currentIndex % 2 === 0 ? 'bg-gray-100 text-black' : 'bg-red-500 text-neutral-100'} 
