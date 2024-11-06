@@ -45,25 +45,24 @@ const Navbar = () => {
 
       {/* Full-screen menu overlay for small screens */}
       <div
-        className={`fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 sm:space-y-0 sm:flex-row ${
+        className={`${
           isOpen ? 'flex' : 'hidden'
-        } sm:static sm:bg-transparent sm:flex sm:items-center transition-all duration-300`}
+        } fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 sm:space-y-0 sm:static sm:bg-transparent sm:flex sm:flex-row sm:items-center transition-all duration-300`}
       >
-        <div className={`flex-col items-start sm:flex-row `}>
-  {navItems.map((navItem, index) => (
-    <Link key={index} href={navItem.link} onClick={closeMenu}>
-      <p
-        className="text-black text-[20px] px-2 py-1 relative cursor-pointer
-          after:content-[''] after:absolute after:bottom-0 after:left-0 
-          after:h-[2px] after:bg-red-600 after:w-0 after:transition-all after:duration-300 
-          hover:after:w-full"
-      >
-        {navItem.name}
-      </p>
-    </Link>
-  ))}
-</div>
-
+        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-8">
+          {navItems.map((navItem, index) => (
+            <Link key={index} href={navItem.link} onClick={closeMenu}>
+              <p
+                className="text-black text-[20px] px-2 py-1 relative cursor-pointer
+                  after:content-[''] after:absolute after:bottom-0 after:left-0 
+                  after:h-[2px] after:bg-red-600 after:w-0 after:transition-all after:duration-300 
+                  hover:after:w-full"
+              >
+                {navItem.name}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Logo for larger screens */}
