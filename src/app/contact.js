@@ -26,7 +26,7 @@ const Footer = () => {
                 </span>
               </Link>
               <h3 className="mt-4 text-xl font-semibold text-gray-100">{contact.name}</h3>
-              <p className="text-gray-400">{contact.email}</p>
+              <p className="text-gray-400 ml-12">{contact.email}</p>
             </div>
           ))}
         </div>
