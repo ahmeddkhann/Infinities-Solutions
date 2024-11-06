@@ -43,7 +43,8 @@ const Page = () => {
           {visualizationProject.map((project, index) => (
             <div 
               key={project.id} 
-              className={`p-4 flex flex-col items-center rounded-lg shadow-lg transition-all duration-300 ${index === 0 ? 'bg-white text-black hover:bg-red-500 hover:text-white' : 'bg-red-500 text-white hover:bg-white hover:text-black'}`}
+              className={`p-4 flex flex-col items-center rounded-lg shadow-lg bg-gray-100 text-black transition-all duration-300 
+                hover:bg-red-500 hover:text-white lg:hover:bg-red-500 lg:hover:text-white`} // Default gray bg with red hover on large screens
             >
               <Image 
                 src={project.image}
@@ -56,7 +57,8 @@ const Page = () => {
               <p className="mb-4">{project.description}</p>
               <Link 
                 href={project.link} 
-                className={`px-12 py-2 rounded transition-all duration-300 ${index === 0 ? 'bg-red-500 text-white hover:bg-white hover:text-black' : 'bg-white text-black hover:bg-red-500 hover:text-white'}`}
+                className="px-12 py-2 rounded transition-all duration-300 
+                  bg-red-500 text-white hover:bg-white hover:text-black lg:hover:bg-white lg:hover:text-black"
               >
                 Visit
               </Link>

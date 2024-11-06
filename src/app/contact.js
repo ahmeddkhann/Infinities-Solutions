@@ -11,15 +11,15 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-6 text-center">Contact Us</h2>
         
-        <div className="flex flex-wrap justify-center gap-12 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
           {Socialcontact.map((contact, index) => (
-            <div key={index} className="flex flex-col mt-6 items-center">
+            <div key={index} className="flex flex-col items-center mt-6">
               <Link href={contact.link} passHref>
                 <span target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform">
                   <Image
                     src={contact.icon}
-                    width={50}
-                    height={50}
+                    width={30}  // Decreased image size for small screens
+                    height={30} // Decreased image size for small screens
                     alt={contact.name}
                     className="rounded-lg border border-gray-500 shadow-lg"
                   />
