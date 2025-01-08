@@ -32,6 +32,14 @@ export const services = [
         image: "/data-vis.png",
         link: '/services/datavis'
     },
+        {
+            id: 3,
+            title: "Mobile Applications",
+            text: "Our team can help you build Mobile Applications that will meet your needs",
+            image: "/mob-app.png",
+            link: '/services/datavis'
+        },
+    
  
 ]
 
@@ -48,10 +56,20 @@ export const dataVisualization = {
     techTitle: "Infinities Solutions",
     techSubTitle: "Tech Solutions beyond limits",
     title: "Data Visualization",
+    subTitle: "Simplify Complexity, Empower Decisions.",
+    image: "/data-vis.png",
+    text: "In the mobile-first era, having access to actionable insights on the go is crucial. At Infinities Solutions, we specialize in delivering mobile-friendly solutions that transform raw data into clear and interactive information.Our process starts with understanding your goals and tailoring experiences for mobile devices. Whether it's interactive dashboards, real-time reports, or trend analysis, we design intuitive interfaces that fit perfectly on small screens, ensuring seamless navigation and usability.Using cutting-edge tools like Tableau, Power BI, and D3.js, we create mobile-optimized reports that empower users to explore metrics, identify patterns, and track performance effortlessly. These solutions enable decision-making anytime, anywhere.Let us help you unlock the potential of your data with customized solutions designed for mobile apps, ensuring that key insights are always within reach."
+}
+
+export const MobileApplication = {
+    techTitle: "Infinities Solutions",
+    techSubTitle: "Tech Solutions beyond limits",
+    title: "Mobile Applications",
     subTitle: "Transforming data into actionable insights.",
     image: "/data-vis.png",
     text: "In today's data-driven world, effective data visualization is essential for making informed business decisions. At Infinities Solutions, we specialize in transforming complex data into clear, actionable insights through innovative visualization techniques. Our approach begins with understanding your data and the specific goals of your analysis. \n\nWe create visually compelling dashboards and reports that not only present data but also tell a story. Using tools such as Tableau, Power BI, and D3.js, we design interactive visualizations that allow users to explore data from multiple perspectives. This empowers your team to identify trends, patterns, and anomalies quickly and efficiently. \n\nOur data visualization services are tailored to meet the unique needs of your organization, whether you're looking to enhance internal reporting, track key performance indicators (KPIs), or present data to stakeholders in a digestible format. We believe that the best insights come from clear visual representations, and our goal is to make your data accessible and understandable for everyone in your organization. \n\nInfinities Solutions is committed to helping businesses leverage their data effectively. With our expertise, you can turn raw data into a strategic asset, driving better decision-making and ultimately leading to increased growth and profitability. Let us help you unlock the power of your data with our comprehensive data visualization services."
 }
+
 
 export const team = [
     {
@@ -64,7 +82,7 @@ export const team = [
     {
         id: 2,
         name: "Muhammad Ahmad",
-        position: ["Founder &", "Full Stack Developer"],
+        position: ["Founder ,", "Web & Mobile Apps Developer"],
         image: "/ahmed.png",
         LinkedIn: "https://www.linkedin.com/in/ahmed-khan-5b014a301/"
     },
